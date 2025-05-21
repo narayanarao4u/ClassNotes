@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Clock</title>
+</head>
+<body>
+  <h2 id="clock">--:--:--</h2>
+  <button onclick="startClock()">Start Clock</button>
+  <button onclick="stopClock()">Stop Clock</button>
+
+  <script>
+    let clockInterval;
+
+    function updateClock() {
+      const now = new Date();
+      document.getElementById("clock").textContent = now.toLocaleTimeString();
+    }
+
+    function startClock() {
+      updateClock(); // show immediately
+      clockInterval = setInterval(updateClock, 1000);
+    }
+
+    function stopClock() {
+      clearInterval(clockInterval);
+    }
+  </script>
+</body>
+</html>

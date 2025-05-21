@@ -1,0 +1,44 @@
+Below is a revised table of JavaScript string methods, sorted with the most commonly used and important methods at the top based on their frequency in everyday programming tasks (e.g., string manipulation, searching, and formatting). The table includes the method name, description, example, and output, as requested. Less frequently used or specialized methods (e.g., `normalize`, `localeCompare`) are placed lower in the table.
+
+| **Method**                | **Description**                                                                 | **Example**                                                                 | **Output**                       |
+|---------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------|
+| `toLowerCase()`          | Converts the string to lowercase.                                              | `"HELLO".toLowerCase()`                                                  | `"hello"`                       |
+| `toUpperCase()`          | Converts the string to uppercase.                                              | `"hello".toUpperCase()`                                                  | `"HELLO"`                       |
+| `trim()`                 | Removes whitespace from both ends of the string.                               | `"  Hello  ".trim()`                                                     | `"Hello"`                       |
+| `split(separator, limit?)` | Splits the string into an array of substrings based on the separator.   | `"Hello World".split(" ")`                                                | `["Hello", "World"]`            |
+| `includes(searchString, position?)` | Checks if the string contains the specified substring.                | `"Hello World".includes("World")`                                          | `true`                          |
+| `replace(search, replacement)` | Replaces the first occurrence of a substring or pattern.                | `"Hello".replace("l", "x")`                                               | `"Hexlo"`                       |
+| `replaceAll(search, replacement)` | Replaces all occurrences of a substring or pattern.                  | `"Hello".replaceAll("l", "x")`                                            | `"Hexxo"`                       |
+| `indexOf(searchString, position?)` | Returns the index of the first occurrence of the substring, or -1 if not found. | `"Hello".indexOf("l")`                                                    | `2`                             |
+| `slice(start, end?)`     | Extracts a section of the string and returns it as a new string.                | `"Hello".slice(1, 4)`                                                     | `"ell"`                         |
+| `substring(start, end?)` | Returns the part of the string between the start and end indices.              | `"Hello".substring(1, 4)`                                                 | `"ell"`                         |
+| `startsWith(searchString, position?)` | Checks if the string starts with the specified substring.             | `"Hello World".startsWith("Hello")`                                       | `true`                          |
+| `endsWith(searchString, length?)` | Checks if the string ends with the specified substring.                 | `"Hello World".endsWith("World")`                                          | `true`                          |
+| `concat(...strings)`     | Combines the string with one or more strings and returns the new string.        | `"Hello".concat(" ", "World")`                                             | `"Hello World"`                 |
+| `charAt(index)`          | Returns the character at the specified index.                                   | `"Hello".charAt(1)`                                                        | `"e"`                           |
+| `at(index)`              | Returns the character at the specified index (supports negative indices).       | `"Hello".at(1)`<br>`"Hello".at(-1)`                                         | `"e"`<br>`"o"`                  |
+| `padStart(targetLength, padString?)` | Pads the start of the string to reach the target length.             | `"Hello".padStart(10, ".")`                                               | `".....Hello"`                  |
+| `padEnd(targetLength, padString?)` | Pads the end of the string to reach the target length.                 | `"Hello".padEnd(10, ".")`                                                 | `"Hello....."`                  |
+| `repeat(count)`          | Returns a new string with the specified number of copies of the original.       | `"Hi".repeat(3)`                                                          | `"HiHiHi"`                      |
+| `trimStart()`            | Removes whitespace from the start of the string.                               | `"  Hello  ".trimStart()`                                                | `"Hello  "`                     |
+| `trimEnd()`              | Removes whitespace from the end of the string.                                 | `"  Hello  ".trimEnd()`                                                  | `"  Hello"`                     |
+| `lastIndexOf(searchString, position?)` | Returns the index of the last occurrence of the substring, or -1 if not found. | `"Hello".lastIndexOf("l“Oh)”                                               | `3`                             |
+| `match(regexp)`          | Retrieves matches when matching a string against a regular expression.          | `"Hello".match(/l/g)`                                                      | `["l", "l"]`                    |
+| `search(regexp)`         | Returns the index of the first match of the regular expression, or -1 if not found. | `"Hello".search(/l/)`                                                 | `2`                             |
+| `matchAll(regexp)`       | Returns an iterator of all matches of a regular expression.                    | `[..."Hello".matchAll(/l/g)]`                                              | `[["l"], ["l"]]`                |
+| `charCodeAt(index)`      | Returns the UTF-16 code unit at the specified index.                            | `"Hello".charCodeAt(1)`                                                    | `101`                           |
+| `codePointAt(index)`     | Returns the Unicode code point at the specified index (handles surrogate pairs).| `"😊".codePointAt(0)`                                                     | `128522`                        |
+| `toLocaleLowerCase(locale?)` | Converts the string to lowercase according to the specified locale.     | `"HELLO".toLocaleLowerCase()`                                             | `"hello"`                       |
+| `toLocaleUpperCase(locale?)` | Converts the string to uppercase according to the specified locale.     | `"hello".toLocaleUpperCase()`                                             | `"HELLO"`                       |
+| `localeCompare(compareString)` | Compares two strings in the current locale.                              | `"apple".localeCompare("banana")`                                          | `-1`                            |
+| `normalize(form?)`       | Returns the Unicode Normalization Form of the string.                          | `"é".normalize("NFC")`                                                   | `"é"`                           |
+| `valueOf()`              | Returns the primitive value of the string.                                     | `"Hello".valueOf()`                                                      | `"Hello"`                       |
+
+### Notes:
+- **Prioritization**: Methods like `toLowerCase`, `toUpperCase`, `trim`, `split`, `includes`, `replace`, and `replaceAll` are placed at the top due to their frequent use in tasks like text normalization, parsing, and search operations. Methods like `normalize` and `localeCompare` are lower as they are more specialized (e.g., for Unicode or locale-specific tasks).
+- **Output Column**: The **Output** column shows the result of the provided example. For `matchAll`, the iterator is converted to an array for clarity.
+- **Immutability**: All methods return a new string or value; the original string remains unchanged.
+- **Regular Expressions**: Methods like `match`, `matchAll`, `replace`, `replaceAll`, and `search` support regular expressions for advanced pattern matching.
+- **Unicode Support**: Methods like `codePointAt` and `normalize` handle Unicode characters (e.g., emojis) correctly.
+
+If you need further details, additional examples, or want to adjust the prioritization criteria, let me know!
