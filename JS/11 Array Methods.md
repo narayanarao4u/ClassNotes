@@ -1,3 +1,4 @@
+
 Here's a table of common **JavaScript Array methods** with examples and their **output**, clearly separated into columns:
 
 | **Method**    | **Example Code**                                  | **Output**                    |
