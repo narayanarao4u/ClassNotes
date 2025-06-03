@@ -1,12 +1,34 @@
+---
+marp: false
+theme: gaia
+paginate: true
+header: 'BSNL Training Point, Visakhapatnam'
+size: 4:3
+---
+
+<style>
+.custom-slide {
+border: 1px solid lightpink;
+padding:5px;
+border-radius:5px;
+}
+.flex{
+  display:flex;
+}
+</style>
+
 ### HTML Semantic and Non-Semantic Tags
 
 HTML tags are categorized into **semantic** and **non-semantic** tags based on whether they convey the meaning or structure of the content they enclose.
 
 ---
+<section class="custom-slide">
 
 ## ✅ Semantic Tags
 
 **Semantic tags clearly describe their meaning to both the browser and the developer.** They help improve accessibility and SEO.
+
+
 
 ### 🔹 Examples:
 
@@ -21,7 +43,7 @@ HTML tags are categorized into **semantic** and **non-semantic** tags based on w
 | `<footer>`     | Represents the footer of a document or section            |
 | `<figure>`     | Wraps media like images or diagrams                       |
 | `<figcaption>` | Caption for the media inside `<figure>`                   |
-
+</section>
 ### 🔸 Example of Semantic Tags:
 
 ```html

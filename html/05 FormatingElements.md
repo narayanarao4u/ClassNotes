@@ -1,4 +1,4 @@
-Here’s a complete list of **HTML formatting tags** with short explanations and examples.
+
 
 ---
 
