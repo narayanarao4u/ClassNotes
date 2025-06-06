@@ -123,28 +123,24 @@ line-height: 1.8;
 
 ---
 
-## 🌫️ Text Shadow
+#### 🌫️ Text Shadow
 
 ```css
 text-shadow: 2px 2px red;
 text-shadow: 2px 2px 5px red;
 ```
-
 More complex:
-
 ```css
 text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 ```
 
----
 
-## 🔗 Example with YouTube Link Style
+#### 🔗 Example with YouTube Link Style
 
 ```css
 color: white;
 text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 ```
-
 * Useful for glowing text effect.
 
 ---
@@ -153,5 +149,5 @@ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
 [Watch CSS Box-Shadow tutorial: the basics](https://www.youtube.com/watch?v=-JNRQ5HjNeI)
 
----
+
 
