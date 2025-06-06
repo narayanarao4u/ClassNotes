@@ -73,13 +73,9 @@ array.splice(start, deleteCount, item1, item2, ...)
 
 🔸 *Splice modifies the array directly.*
 
----
-
-Would you like visual diagrams or animations for better understanding?
-
 
 -----
-Here's a clear explanation of the JavaScript array methods **`every()`** and **`some()`**, with syntax, usage, and examples.
+## clear explanation of the JavaScript array methods **`every()`** and **`some()`**, with syntax, usage, and examples.
 
 ---
 

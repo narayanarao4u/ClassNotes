@@ -36,6 +36,31 @@ Age : <input type = "number">
 
 </section>
 
+--- 
+
+### input (password)
+<section class="col2">
+
+``` html
+ <input type = "password">
+```
+Age : <input type = "password">
+
+</section>
+
+
+--- 
+
+### input (password)
+<section class="col2">
+
+``` html
+ <input type = "password">
+```
+Age : <input type = "password">
+
+</section>
+
 
 ------
 

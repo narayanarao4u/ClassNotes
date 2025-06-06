@@ -9,7 +9,7 @@ CSS **simple selectors** are used to select HTML elements based on  name, id, cl
 1. **Type Selector**: Selects all elements of a given type.
 
    ```css
-   p { color: blue; } /* selects all <p> elements */
+   p { background-color: blue; } /* selects all <p> elements */
    ```
 
 2. **ID Selector**: Selects an element with a specific `id`. Use `#` prefix.
@@ -21,7 +21,7 @@ CSS **simple selectors** are used to select HTML elements based on  name, id, cl
 3. **Class Selector**: Selects all elements with a specific `class`. Use `.` prefix.
 
    ```css
-   .highlight { font-weight: bold; }
+   .highlight { background-color: pink; }
    ```
 
 4. **Universal Selector**: Selects all elements.

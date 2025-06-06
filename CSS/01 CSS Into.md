@@ -8,10 +8,10 @@ paginate: true
 ---
 ## Here are 5 important points about an introduction to CSS:
 
-- CSS (Cascading Style Sheets) is a stylesheet language used to define the presentation and layout of web pages written in HTML or XML[2][3].  
+- CSS (Cascading Style Sheets) is a stylesheet language used to define the presentation and layout of web pages written in HTML.  
 
 
-- It separates content from design, allowing developers to control colors, fonts, spacing, and positioning independently of the HTML structure[1][5].  
+- It separates content from design, allowing developers to control colors, fonts, spacing, and positioning independently of the HTML structure.  
 
 - CSS rules consist of selectors that target HTML elements and declarations that specify style properties and their values.  
 
