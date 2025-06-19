@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 ### JavaScript in 5 key points:
 
 1. **Client-Side Scripting**: JavaScript runs in the browser to create dynamic, interactive web pages.

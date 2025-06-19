@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS 2D Transform Functions Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .transform-section {
+      margin-bottom: 30px;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .description {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .checkbox-label input {
+      margin-right: 10px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #3498db;
+      transition: all 0.5s ease;
+      margin-left: 20px;
+    }
+
+    .transform-container {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Transforms */
+    .translate { transform: translate(50px, 20px); }
+    .rotate { transform: rotate(45deg); }
+    .scaleX { transform: scaleX(1.5); }
+    .scaleY { transform: scaleY(1.5); }
+    .scale { transform: scale(1.5); }
+    .skewX { transform: skewX(30deg); }
+    .skewY { transform: skewY(30deg); }
+    .skew { transform: skew(30deg, 10deg); }
+    .matrix { transform: matrix(1, 0.5, -0.5, 1, 30, 20); }
+  </style>
+  <script>
+    function toggleTransform(checkbox, targetId, className) {
+      const target = document.getElementById(targetId);
+      if (checkbox.checked) {
+        target.classList.add(className);
+      } else {
+        target.classList.remove(className);
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <h1>🎯 CSS 2D Transform Functions Demo</h1>
+
+  <!-- Transform Sections -->
+  <div class="transform-section">
+    <div class="description">🔁 <code>translate(50px, 20px)</code>: Moves the element right and down.</div>
+    <div class="transform-container">
+      <label class="checkbox-label">
+        <input type="checkbox" onchange="toggleTransform(this, 'box1', 'translate')"> Apply translate()
+      </label>
+      <div class="box" id="box1"></div>
+    </div>
+  </div>
+
+  <div class="transform-section">
+    <div class="description">🔄 <code>rotate(45deg)</code>: Rotates the element 45 degrees.</div>
+    <div class="transform-container">
+      <label class="checkbox-label">
+        <input type="checkbox" onchange="toggleTransform(this, 'box2', 'rotate')"> Apply rotate()
+      </label>
+      <div class="box" id="box2"></div>
+    </div>
+  </div>
+
+  <div class="transform-section">
+    <div class="description">🔍 <code>scaleX(1.5)</code>: Scales width by 1.5x.</div>
+    <div class="transform-container">
+      <label class="checkbox-label">
+        <input type="checkbox" onchange="toggleTransform(this, 'box3', 'scaleX')"> Apply scaleX()
+      </label>
+      <div class="box" id="box3"></div>
+    </div>
+  </div>
+
+  <div class="transform-section">
+    <div class="description">🔍 <code>scaleY(1.5)</code>: Scales height by 1.5x.</div>
+    <div class="transform-container">
+      <label class="checkbox-label">
+        <input type="checkbox" onchange="toggleTransform(this, 'box4', 'scaleY')"> Apply scaleY()
+      </label>
+      <div class="box" id="box4"></div>
+    </div>
+  </div>
+
+  <div class="transform-section">
+    <div class="description">🔍 <code>scale(1.5)</code>: Scales width and height by 1.5x.</div>
+    <div class="transform-container">
+      <label class="checkbox-label">
+        <input type="checkbox" onchange="toggleTransform(this, 'box5', 'scale')"> Apply scale()
+      </label>
+      <div class="box" id="box5"></div>
+    </div>
+  </div>
+
+  <div class="transform-section">
+    <div class="description">📐 <code>skewX(30deg)</code>: Skews horizontally.</div>
+    <div class="transform-container">
+      <label class="checkbox-label">
+        <input type="checkbox" onchange="toggleTransform(this, 'box6', 'skewX')"> Apply skewX()
+      </label>
+      <div class="box" id="box6"></div>
+    </div>
+  </div>
+
+  <div class="transform-section">
+    <div class="description">📐 <code>skewY(30deg)</code>: Skews vertically.</div>
+    <div class="transform-container">
+      <label class="checkbox-label">
+        <input type="checkbox" onchange="toggleTransform(this, 'box7', 'skewY')"> Apply skewY()
+      </label>
+      <div class="box" id="box7"></div>
+    </div>
+  </div>
+
+  <div class="transform-section">
+    <div class="description">📐 <code>skew(30deg, 10deg)</code>: Skews in both directions.</div>
+    <div class="transform-container">
+      <label class="checkbox-label">
+        <input type="checkbox" onchange="toggleTransform(this, 'box8', 'skew')"> Apply skew()
+      </label>
+      <div class="box" id="box8"></div>
+    </div>
+  </div>
+
+  <div class="transform-section">
+    <div class="description">
+      🔣 
+      <code>matrix(1, 0.5, -0.5, 1, 30, 20)</code>: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</div>
+    <div class="transform-container">
+      <label class="checkbox-label">
+        <input type="checkbox" onchange="toggleTransform(this, 'box9', 'matrix')"> Apply matrix()
+      </label>
+      <div class="box" id="box9"></div>
+    </div>
+  </div>
+
+</body>
+</html>
