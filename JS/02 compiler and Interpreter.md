@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="_styles.css">
+
 Here’s a short explanation of **compiler** and **interpreter** with examples:
 
 ### **Compiler**:

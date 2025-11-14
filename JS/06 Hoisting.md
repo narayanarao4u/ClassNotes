@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="_styles.css">
 ### 🔹 What is **Hoisting** in JavaScript?
 
 **Hoisting** is JavaScript's default behavior of **moving declarations to the top of their scope** (either the function or global scope) **before the code is executed**.
